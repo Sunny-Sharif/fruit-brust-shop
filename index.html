@@ -15,7 +15,7 @@
     <!-- lato font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- custom tailwind -->
     <script>
         tailwind.config = {
@@ -38,11 +38,39 @@
 </head>
 
 <body class="primary-font">
-    <header>
-        <nav>
+    <header class="max-w-[1140px]  mx-auto">
+        <nav class="flex flex-row-reverse lg:flex-row lg:text-white px-5 py-4 lg:my-12 justify-between items-center lg:bg-primary-bg lg:rounded-full ">
+            <ul class="lg:flex gap-3 lg:gap-7 text-sm lg:text-lg font-normal lg:font-medium hidden lg:ml-2 ">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+            </ul>
+            <!-- smal device  -->
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost md:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
 
+                </ul>
+            </div>
+            <div class="flex  items-center gap-2 lg:gap-3">
+                <img src="./images/logo.png" class="w-8 lg:w-10" alt="">
+                <h1 class="text-3xl lg:text-4xl font-bold">Fruit Burst</h1>
+            </div>
+            <div class="mr-2 relative hidden lg:block ">
+                <input type="search" name="" id="" placeholder="Search here" class="w-48 lg:w-64 px-8 py-2 rounded-full text-black outline-none ">
+                <i class="fa-solid fa-magnifying-glass absolute right-2 bottom-3 text-black"></i>
+
+            </div>
         </nav>
     </header>
+
 
 </body>
 
